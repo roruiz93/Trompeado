@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TrompeandoV0.1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TrompeandoV0" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../TrompeandoV0.1" />
+					<Add directory="./" />
+					<Add directory="../TrompeandoV0.5" />
+				</Compiler>
+				<Linker>
+					<Add library="SFML/lib/libsfml-audio.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TrompeandoV0" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../TrompeandoV0.1" />
+					<Add directory="./" />
+					<Add directory="../TrompeandoV0.5" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="SFML/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="SFML/lib" />
+		</Linker>
+		<Unit filename="ArchivoEstadistica.cpp" />
+		<Unit filename="ArchivoEstadistica.h" />
+		<Unit filename="Arena.cpp" />
+		<Unit filename="Arena.h" />
+		<Unit filename="Colisionable.cpp" />
+		<Unit filename="Colisionable.h" />
+		<Unit filename="Controlador.cpp" />
+		<Unit filename="Controlador.h" />
+		<Unit filename="Estadisticas.cpp" />
+		<Unit filename="Estadisticas.h" />
+		<Unit filename="Gameplay.cpp" />
+		<Unit filename="Gameplay.h" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
+		<Unit filename="Nitro.cpp" />
+		<Unit filename="Nitro.h" />
+		<Unit filename="Tiempo.cpp" />
+		<Unit filename="Tiempo.h" />
+		<Unit filename="Trompo.cpp" />
+		<Unit filename="Trompo.h" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
